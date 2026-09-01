@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://d2sm5l1ig1ts7"]
+
+[ext_resource type="Script" uid="uid://cx3xesvemenyx" path="res://scripts/button.gd" id="1_l6cm7"]
+
+[node name="Control" type="Control" unique_id=490103314]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=988393280]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.75
+offset_top = -217.0
+offset_right = 83.75
+offset_bottom = -167.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PLAY"
+script = ExtResource("1_l6cm7")
+
+[node name="Label" type="Label" parent="." unique_id=2009005924]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -42.25
+offset_right = 115.0
+offset_bottom = 42.25
+grow_horizontal = 2
+grow_vertical = 2
+text = "This is just a big fat thing to get us started, everything is a placeholder (unless we never change it)"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
